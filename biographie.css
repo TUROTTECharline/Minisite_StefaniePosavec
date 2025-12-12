@@ -1,0 +1,259 @@
+footer p {
+    text-align: center; 
+    margin: 0; 
+    padding: 10px 0;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  margin-left: 7px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    transition: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logo-link:hover {
+    background-color: transparent;
+    padding: 0;
+}
+
+.logo-link:hover .logo-img {
+    filter: opacity(0.65);
+    transition: filter 0.3s ease;
+}
+
+.actif {
+  background-color: #9ab3f4b3;
+  padding: 9px 20px;
+  border-radius: 4px;
+
+}.biographie {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 20px;
+  max-width: 1000%;   
+}
+
+.biographie h1 {
+  font-family: 'Lexend';
+  color: black;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 120px; 
+}
+
+.biographie h2 {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-family: 'Manrope';
+}
+
+.biographie p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Manrope';
+}
+
+.button-1 {
+  background-color: #9AB3F4;
+  border-radius: 4px;
+  border-style: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-family: 'Lexend';
+  transition: 0.5s;
+}
+
+.button-1:hover {
+  background-color: #9ab3f4b3;
+}
+
+.button-1-actif {
+  background-color :rgba(154, 179, 244, 0.7);
+  color:black;
+}
+
+.decade-visual-visible {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
+.decade-buttons-container {
+  margin-bottom: -600px;
+}
+
+#decade-visual {
+  max-width: 200%; 
+  height: auto; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: -10px;
+  opacity: 0;
+  transform: scale(0.95);
+  transform: translateY(-25%) translateX(-15px);
+  border-radius: 5px;
+  max-width: 1100px;
+}
+
+.image-display {
+  max-width: 200%; 
+  width: -80px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.button-1.active-decade {
+  background-color: #5D7FD9;
+  font-weight: bold;
+  cursor: default;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-1.active-decade:hover {
+  background-color: #5D7FD9;
+  opacity: 1;
+}
+
+@media (max-width : 1440px){
+
+.decade-buttons-container {
+  margin-bottom: -400px;
+}
+
+#decade-visual {
+  position: static;
+  margin-top: 200px;
+  width: 100%; 
+  max-width: 1100px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+@media (max-width : 1334px){
+.biographie {
+  padding-left: 20px; 
+  padding-right: 20px; 
+  }
+
+#decade-visual {
+  position: static;
+  margin-top: 370px;
+  width: 100%; 
+  max-width: 1200px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: auto;
+  }
+}
+
+@media (max-width : 1437px){
+
+#decade-visual {
+  position: static;
+  margin-top: 370px;
+  width: 100%; 
+  max-width: 1200px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: auto;
+  }
+}
+
+@media (max-width : 862px){
+.button-1 {
+  display: block;
+  width: calc(100% - 20px);
+  max-width: 200px;
+  margin: 10px auto;
+  margin-top: 30px;
+  }
+
+#decade-visual {
+  position: static;
+  margin-top: 370px;
+  width: 100%; 
+  max-width: 1200px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: auto;
+  }
+}
+
+@media (max-width: 432px) {
+
+.biographie {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  min-height: auto;
+  }
+
+.biographie h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+  }
+
+.biographie h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  }
+
+.biographie p {
+  font-size: 14px;
+  line-height: 1.5;
+  }
+
+#decade-visual {
+  position: static;
+  margin-top: 490px;
+  width: 100%; 
+  max-width: 1200px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: auto;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Stefanie Posavec</title>
+  <link href="style.css" rel="stylesheet"/> 
+  <link href="accueil.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+        <a href="index.html" class="logo-link">
+          <div class="logo">
+            <img src="images/Logo_SP.png" alt="Logo de Stefanie Posavec" class="logo-img">
+            <span class="logo-text">SP</span>
+        </div>
+        </a>
+        <div class="button"></div>
+        <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="biographie.html">Biographie</a></li>
+            <li><a href="travaux.html">Travaux</a></li>
+            <li><a href="témoignages.html">Témoignages</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+  <section id="accueil" class="section-accueil">
+    <img src="images/Stefanie_Posavec.png" alt="Stefanie Posavec" class="image-accueil">
+    <div class="accueil">
+        <h1>Stefanie Posavec</h1>
+        <h2>Directrice créative, artiste et auteure, spécialisée dans les données</h2>
+        <span class="guillemets_bleus">“</span><p>D’origine américaine, Stefanie Posavec est une designeuse d’informations indépendante basée à Londres, qui se consacre à la création de visualisation de données de manière ludique et accessible au plus grand nombre. Ses créations, exposées à travers le monde, ont notamment franchi les portes de nombreux musées, tels que le V&A (Royaume-Uni), le Centre Pompidou (France), ou encore le MoMA (États-Unis) par exemple. Par ailleurs, son travail a été mentionné dans plusieurs journaux, dont The Guardian, The Independent, et The Washington Post.</p>
+    </div>
+  </section>
+
+  <script>
+    const button = document.querySelector('.button');
+    const menu = document.querySelector('.menu');
+
+    button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+  </script>
+  
+<footer>
+    <p>
+        © 2025 Site Stefanie Posavec. Tous droits réservés. | Site créé par TUROTTE Charline.
+    </p>
+</footer>
+</body>
+
+</html>

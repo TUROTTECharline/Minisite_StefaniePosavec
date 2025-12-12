@@ -1,0 +1,184 @@
+footer p {
+    text-align: center; 
+    margin: 0; 
+    padding: 10px 0;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  margin-left: 7px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    transition: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logo-link:hover {
+    background-color: transparent;
+    padding: 0;
+}
+
+.logo-link:hover .logo-img {
+    filter: opacity(0.65);
+    transition: filter 0.3s ease;
+}
+
+.actif {
+  background-color: #9ab3f4b3;
+  padding: 9px 20px;
+  border-radius: 4px;
+
+}
+
+#contact {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 20px;
+  max-width: 1000%;   
+}
+
+#contact h1 {
+  font-family: 'Lexend';
+  color: black;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 120px; 
+}
+
+#contact h2 {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-family: 'Manrope';
+}
+
+#contact p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Manrope';
+}
+
+form {
+  font-family: 'Manrope';
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px; 
+  margin: auto;
+  color: black;
+  background-color: white;
+  padding: 25px 25px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  font-family: 'Lexend';
+  font-weight:600;
+  color: black;
+  background-color: transparent;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: 30px auto 0 auto;
+  background: linear-gradient(
+    90deg, 
+    #EC81D0 0%, 
+    #9AB3F4 33%, 
+    #ABD6D2 66%,
+    #FFCE8A 100%
+  );
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+input[type='submit']:hover {
+  opacity: 0.7;
+}
+
+@media (max-width : 1334px){
+#contact {
+  padding-left: 20px; 
+  padding-right: 20px; 
+  }
+}
+
+@media (max-width: 432px) {
+
+#contact {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  min-height: auto;
+  }
+
+#contact h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+  }
+
+#contact h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  }
+
+#contact p {
+  font-size: 14px;
+  line-height: 1.5;
+  }
+}

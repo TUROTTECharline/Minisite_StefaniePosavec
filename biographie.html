@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biographie de Stefanie Posavec</title>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="biographie.css" rel="stylesheet"/> 
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <a href="index.html" class="logo-link"> 
+        <div class="logo">
+            <img src="images/Logo_SP.png" alt="Logo de Stefanie Posavec" class="logo-img">
+            <span class="logo-text">SP</span>
+        </div>
+        </a>
+        <div class="button"></div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="biographie.html" class="actif">Biographie</a></li>
+            <li><a href="travaux.html">Travaux</a></li>
+            <li><a href="témoignages.html">Témoignages</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="biographie" class="section-biographie">
+        <div class="biographie">
+            <h1>Biographie</h1>
+            <h2>La carrière de Stefanie Posavec</h2>
+            <p>De ses débuts à ses réalisations les plus récentes, apprenez-en plus sur son parcours.</p>
+        <div class="decade-buttons-container"> 
+            <button class="button-1" role="button" onclick="showDecadeImage('2000')">Années 2000</button>
+            <button class="button-1" role="button" onclick="showDecadeImage('2010')">Années 2010</button>
+            <button class="button-1" role="button" onclick="showDecadeImage('2020')">Années 2020</button> 
+        </div>
+    </div>
+    
+    <div class="image-display">
+    <img id="decade-visual" src="images/Infographie_biographieSP11.pdf" alt="Travaux de Stefanie Posavec par décennie" class="decade-visual-visible" />
+    </div>
+    </section>
+
+    <script>
+const boutonsAnnee = document.querySelectorAll('.button-1');
+  
+  boutonsAnnee.forEach(boutonClique => {
+    boutonClique.addEventListener('click', function() {
+      boutonsAnnee.forEach(bouton => {
+        bouton.classList.remove('button-1-actif');
+      });
+      this.classList.add('button-1-actif');
+    });
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+        showDecadeImage('2000'); 
+        const bouton2000 = document.querySelector('.button-1:first-of-type');
+        if (bouton2000) {
+            bouton2000.classList.add('button-1-actif');
+        }
+    });
+    
+    </script>
+    </section>
+
+    <script src="js/script.js">
+    </script>
+<footer>
+    <p>
+        © 2025 Site Stefanie Posavec. Tous droits réservés. | Site créé par TUROTTE Charline.
+    </p>
+</footer>
+</body>
+</html>

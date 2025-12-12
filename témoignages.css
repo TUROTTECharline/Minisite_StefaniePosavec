@@ -1,0 +1,239 @@
+footer p {
+    text-align: center; 
+    margin: 0; 
+    padding: 10px 0;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  margin-left: 7px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    transition: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logo-link:hover {
+    background-color: transparent;
+    padding: 0;
+}
+
+.logo-link:hover .logo-img {
+    filter: opacity(0.65);
+    transition: filter 0.3s ease;
+}
+
+.actif {
+  background-color: #9ab3f4b3;
+  padding: 9px 20px;
+  border-radius: 4px;
+}
+
+#témoignages h1 {
+  font-family: 'Lexend';
+  color: black;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 120px; 
+}
+
+#témoignages {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 20px;
+  max-width: 1000%;   
+}
+
+#témoignages p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Manrope';
+}
+
+#témoignages h2 {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-family: 'Manrope';
+}
+
+.testimonials-section {
+  padding: 50px 0;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.carousel-viewport {
+  width: calc(3 * 350px + 2 * 30px);
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+  gap: 30px; 
+}
+
+.testimonial-card {
+  flex: 0 0 350px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.quote-mark1 {
+  font-size: 100px;
+  color: #EC81D0;
+  font-family: 'Lexend', sans-serif;
+  line-height: 1;
+  margin-bottom: -30px;
+}
+
+.quote-mark2 {
+  font-size: 100px;
+  color: #FFCE8A;
+  font-family: 'Lexend', sans-serif;
+  line-height: 1;
+  margin-bottom: -30px;
+}
+
+.quote-mark3 {
+  font-size: 100px;
+  color: #ABD6D2;
+  font-family: 'Lexend', sans-serif;
+  line-height: 1;
+  margin-bottom: -30px;
+}
+
+.arrow {
+  border: 1px solid #000;
+  background-color: #FCF9F2;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  margin: 0 20px;
+}
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.arrow:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1341px) {
+  .arrow {
+    display: none;
+  }
+
+  .testimonials-container {
+    align-items: flex-start;
+    padding: 0 -20px;
+    box-sizing: border-box;
+    padding-right: 30px;
+  }
+
+  .carousel-viewport {
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .testimonials-wrapper {
+    flex-direction: column;
+    transition: none !important;
+    transform: none !important; 
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 432px) {
+  #témoignages {
+    width: 100%;
+    min-height: auto;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  #témoignages h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    margin-top: 150px;
+  }
+
+  #témoignages h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  #témoignages p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1334px) {
+
+    #témoignages {
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+  }
+
+@media (max-width: 1369px) {
+.testimonials-wrapper{
+margin-right: -30px;
+}
+}

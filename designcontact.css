@@ -1,0 +1,289 @@
+footer p {
+    text-align: center; 
+    margin: 0; 
+    padding: 10px 0;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: black;
+  margin-left: 7px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    transition: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logo-link:hover {
+    background-color: transparent;
+    padding: 0;
+}
+
+.logo-link:hover .logo-img {
+    filter: opacity(0.65);
+    transition: filter 0.3s ease;
+}
+
+.actif {
+  background-color: #9ab3f4b3;
+  padding: 9px 20px;
+  border-radius: 4px;
+}
+
+.designcontact {
+  position: relative; 
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 20px;
+  max-width: 1000%;   
+  margin-bottom: 100px;
+}
+
+.designcontact h1 {
+  font-family: 'Lexend';
+  color: black;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 120px; 
+}
+
+.designcontact h2 {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-family: 'Manrope';
+}
+
+.designcontact p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Manrope';
+}
+
+.next-page-container {
+    margin: 0;
+    padding-right: 50px;
+    padding-left: 0;
+    display: block;
+}
+
+.next-page-btn {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 25px; 
+    border-radius: 4px;
+    background-color: #9AB3F4;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, padding-right 0.3s ease; 
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: -15px;
+}
+
+.next-page-btn:hover {
+    background-color: rgba(154, 179, 244, 0.7);
+    padding-right: 45px; 
+}
+
+.next-page-btn::after {
+    content: '→'; 
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) translateX(15px); 
+    opacity: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.next-page-btn:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0); 
+}
+
+.before-page-container {
+    margin: 0; 
+    padding-left: 50px; 
+    padding-right: 0;
+    display: block;
+}
+
+.before-page-btn {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 25px; 
+    border-radius: 4px;
+    background-color: #9AB3F4;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease; 
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: -45px;
+}
+
+.before-page-btn:hover {
+    background-color: rgba(154, 179, 244, 0.7);
+    padding-left: 45px; 
+    padding-right: 25px; 
+}
+
+.before-page-btn::before {
+    content: '←'; 
+    position: absolute;
+    left: 20px; 
+    
+    top: 50%;
+    transform: translateY(-50%) translateX(-15px); 
+    opacity: 0;
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.before-page-btn:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0); 
+}
+
+.before-page-btn::after {
+    display: none;
+}
+
+.nav-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px; 
+    margin-bottom: 50px;
+}
+
+.designcontact ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin-bottom: 30px;
+    display: block;
+    margin-top: 50px;
+}
+
+.designcontact > ul > li { 
+    display: list-item; 
+    margin-bottom: 25px; 
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Manrope';
+}
+
+.designcontact > ul > li:last-child {
+    margin-bottom: -20px;
+}
+
+.designcontact li {
+    display: list-item; 
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Manrope';
+}
+
+.designcontact ul ul {
+    list-style-type: circle; 
+    margin-top: 5px;
+    padding-left: 30px; 
+    display: block;
+}
+
+.designcontact ul ul li {
+    gap: 3px;
+}
+
+.designcontact ul + h2 {
+    margin-top: 80px;
+}
+
+@media (max-width: 432px) {
+
+.designcontact {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  min-height: auto;
+  }
+
+.designcontact h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+  }
+
+.designcontact h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  }
+
+.designcontact p {
+  font-size: 14px;
+  line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 580px) {
+
+.next-page-container {
+        padding-left: 0;
+        text-align: center; 
+        margin-top: 10px;
+    }
+
+    .next-page-btn {
+        display: inline-block; 
+        margin-left: 0; 
+        padding-left: 20px; 
+    }
+
+    .next-page-btn:hover {
+        padding-left: 45px;
+    }
+
+}
+
+@media (max-width: 1339px) {
+.designcontact {
+  padding-left: 20px; 
+  padding-right: 20px; 
+  }
+}
