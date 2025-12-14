@@ -203,9 +203,10 @@ footer p {
   .apropos .ul-grid {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     width: 100%;
+    margin-left: 15px;
   }
 
   .apropos .ul-grid li {
@@ -213,26 +214,43 @@ footer p {
     width: 100%;
     margin-bottom: 25px;
   }
+
+.apropos p {
+  margin-right: 15px;
+}
+
+.apropos h2 {
+  margin-right: 15px;
+}
 }
 
 @media (max-width: 580px) {
 
-.next-page-container {
+    .nav-buttons-wrapper {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .next-page-container {
+        display: block; 
+        justify-content: initial; 
         padding-left: 0;
+        padding-right: 0;
         text-align: center; 
-        margin-top: 10px;
+        width: 100%;
+        margin-top: -5px;
     }
-
-    .next-page-btn {
-        display: inline-block; 
+    
+    .before-page-btn {
         margin-left: 0; 
-        padding-left: 20px; 
     }
-
-    .next-page-btn:hover {
-        padding-left: 45px;
+    
+    .before-page-btn:hover {
+        padding-left: 45px; 
+        padding-right: 25px;
     }
-
+    
 }
 
 @media (max-width: 1339px) {

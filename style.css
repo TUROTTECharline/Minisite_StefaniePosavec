@@ -78,12 +78,12 @@ top:0;
   border-radius: 4px;
 }
 
-ul {
+.menu {
 list-style: none;
 display: flex;
 }
 
-ul li {
+.menu li {
 margin: 0 10px;
 }
 
@@ -110,7 +110,7 @@ body {
 position: relative;
 }
 
-ul {
+.menu {
 flex-direction: column;
 position: absolute;
 top: 0;
@@ -125,15 +125,15 @@ transition: 0.5s;
 backdrop-filter: blur(10px);
 }
 
-ul li {
+.menu li {
 margin: 20px 0;
 }
 
-ul li a{
+.menu li a{
 text-transform: uppercase;
 }
 
-ul li a:hover{
+.menu li a:hover{
 color: #000;
 }
 
@@ -178,7 +178,7 @@ transition: 0.5s;
 transform: rotate(-45deg);
 }
 
-ul.active {
+.menu.active {
 left :0 ;
 }
 }
