@@ -10,7 +10,7 @@ if (button && menu) {
 
 function showDecadeImage(decade) {
     const imageMap = {
-        '2000': 'images/Infographie_biographieSP11.pdf',
+        '2000': 'images/Infographie_biographieSP11_page-0001.jpg',
         '2010': 'images/Infographie_biographieSP22.pdf',
         '2020': 'images/Infographie_biographieSP33.pdf'
     };
