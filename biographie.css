@@ -190,19 +190,6 @@ footer p {
   }
 }
 
-@media (max-width : 1437px){
-
-#decade-visual {
-  position: static;
-  margin-top: 370px;
-  width: 100%; 
-  max-width: 1200px;
-  height: auto;
-  margin-left: 20px;
-  margin-right: auto;
-  }
-}
-
 @media (max-width : 862px){
 .button-1 {
   display: block;
