@@ -120,7 +120,7 @@ footer p {
 }
 
 .decade-buttons-container {
-  margin-bottom: -200px;
+  margin-bottom: -100px;
 }
 
 #decade-visual {
@@ -160,7 +160,7 @@ footer p {
 @media (max-width : 1440px){
 
 .decade-buttons-container {
-  margin-bottom: -200px;
+  margin-bottom: -100px;
 }
 
 #decade-visual {
