@@ -8,8 +8,7 @@ if (button && menu) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const imageMap = {
+const imageMap = {
         '2000': 'images/Infographie_biographieSP11_page-0001.jpg',
         '2010': 'images/Infographie_biographieSP22_page-0001.jpg',
         '2020': 'images/Infographie_biographieSP33_page-0001.jpg'
@@ -18,38 +17,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const boutons = document.querySelectorAll('.button-1');
     const imageVisuelle = document.getElementById('decade-visual');
 
-    function changerImage(annee) {
-        if (!imageVisuelle) return;
-
-        boutons.forEach(btn => {
-            btn.classList.remove('button-1-actif');
-            if (btn.getAttribute('data-annee') === annee) {
-                btn.classList.add('button-1-actif');
-            }
-        });
-
-        const cheminImage = imageMap[annee];
+    if (imageVisuelle && boutons.length > 0) {
         
-        imageVisuelle.style.opacity = '0';
+        function changerImage(annee) {
+            console.log("Clic détecté sur l'année : " + annee);
 
-        setTimeout(() => {
-            if (cheminImage) {
-                imageVisuelle.src = cheminImage;
-                imageVisuelle.onload = () => { imageVisuelle.style.opacity = '1'; };
-            }
-        }, 200);
-    }
+            boutons.forEach(btn => {
+                btn.classList.remove('button-1-actif');
+                if (btn.getAttribute('data-annee') === annee) {
+                    btn.classList.add('button-1-actif');
+                }
+            });
 
-    boutons.forEach(bouton => {
-        bouton.addEventListener('click', function() {
-            const anneeCible = this.getAttribute('data-annee');
-            changerImage(anneeCible);
+            const cheminImage = imageMap[annee];
+            
+            imageVisuelle.style.opacity = '0';
+
+            setTimeout(() => {
+                if (cheminImage) {
+                    imageVisuelle.onload = () => { 
+                        console.log("Image chargée : " + annee);
+                        imageVisuelle.style.opacity = '1'; 
+                    };
+
+                    imageVisuelle.onerror = () => {
+                        console.error("Erreur de chargement pour : " + cheminImage);
+                        imageVisuelle.style.opacity = '1'; 
+                    };
+
+                    imageVisuelle.src = cheminImage;
+                }
+            }, 200); 
+        }
+
+        boutons.forEach(bouton => {
+            bouton.addEventListener('click', function() {
+                const anneeCible = this.getAttribute('data-annee');
+                changerImage(anneeCible);
+            });
         });
-    });
 
-    changerImage('2000');
-
-});
+        changerImage('2000');
+    }
 
 document.addEventListener('DOMContentLoaded', () => {
     const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
