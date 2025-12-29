@@ -21,10 +21,9 @@ function showDecadeImage(decade) {
     if (imageElement && imagePath) {
         
         imageElement.style.opacity = '0';
-        setTimeout(() => {
-            imageElement.src = imagePath;
-            imageElement.alt = `Travaux de Stefanie Posavec durant les Années ${decade}`;
 
+        setTimeout(() => {
+           
             imageElement.onload = function() {
                 imageElement.style.opacity = '1';
             };
@@ -34,10 +33,12 @@ function showDecadeImage(decade) {
                 imageElement.style.opacity = '0';
             };
 
+            imageElement.src = imagePath;
+            imageElement.alt = `Travaux de Stefanie Posavec durant les Années ${decade}`;
+
         }, 100);
-    } else if (imageElement) {
-        imageElement.style.opacity = '0';
-        console.warn(`[Avertissement JS] Chemin d'image non défini pour : ${decade}. Image masquée.`);
+    } else {
+        console.warn(`Chemin non trouvé pour : ${decade}`);
     }
 }
 
