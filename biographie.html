@@ -41,35 +41,38 @@
     </div>
     
     <div class="image-display">
-    <img id="decade-visual" src="images/Infographie_biographieSP11_page-0001.jpg" alt="Travaux de Stefanie Posavec par décennie" class="decade-visual-visible" />
+        <img id="decade-visual" src="images/Infographie_biographieSP11_page-0001.jpg" alt="Travaux de Stefanie Posavec par décennie" class="decade-visual-visible" style="width: 100%; opacity: 1;" />
     </div>
     </section>
 
+    <script src="js/script.js"></script>
+
     <script>
-const boutonsAnnee = document.querySelectorAll('.button-1');
-  
-  boutonsAnnee.forEach(boutonClique => {
-    boutonClique.addEventListener('click', function() {
-      boutonsAnnee.forEach(bouton => {
-        bouton.classList.remove('button-1-actif');
-      });
-      this.classList.add('button-1-actif');
-    });
-  });
+        const boutonsAnnee = document.querySelectorAll('.button-1');
+      
+        boutonsAnnee.forEach(boutonClique => {
+            boutonClique.addEventListener('click', function() {
+                boutonsAnnee.forEach(bouton => {
+                    bouton.classList.remove('button-1-actif');
+                });
+                this.classList.add('button-1-actif');
+            });
+        });
 
-document.addEventListener('DOMContentLoaded', function() {
-        showDecadeImage('2000'); 
-        const bouton2000 = document.querySelector('.button-1:first-of-type');
-        if (bouton2000) {
-            bouton2000.classList.add('button-1-actif');
-        }
-    });
-    
-    </script>
-    </section>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof showDecadeImage === "function") {
+                showDecadeImage('2000'); 
+            } else {
+                console.error("Erreur : La fonction showDecadeImage n'est pas chargée.");
+            }
 
-    <script src="js/script.js">
+            const bouton2000 = document.querySelector('.button-1:first-of-type');
+            if (bouton2000) {
+                bouton2000.classList.add('button-1-actif');
+            }
+        });
     </script>
+
 <footer>
     <p>
         © 2025 Site Stefanie Posavec. Tous droits réservés. | Site créé par TUROTTE Charline.
